@@ -92,3 +92,23 @@ y = {2, 3}
 
 print(x.isdisjoint(y))  # ❌ False: they both have 2
 
+##creating Tuples
+t1 = (1, 2, 3)
+t2 = ("apple", "banana")
+t3 = ()               # Empty tuple
+t4 = (5,)             # Single element? Comma needed!
+
+print(t1[0])  # 1
+print(t1[-1]) # 3
+
+for item in t2:
+    print(item)
+
+t = (1, 2, 2, 3, 4)
+
+print(t.count(2))     # How many times 2 appears → 2
+print(t.index(3))     # First index of 3 → 3
+
+##t[0] = 99  # ❌ TypeError — tuples are immutable!
+
+
