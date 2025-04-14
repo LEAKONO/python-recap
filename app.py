@@ -44,3 +44,51 @@ print(fruits.count("Banana"))
 fruits.sort()
 print(fruits)
 print(len(fruits))
+
+
+##  2. Sets and Its Methods
+Num={1,5,6,7,9,19}
+Num.add(10)
+print(Num)
+
+Num.remove(10)
+print(Num)
+
+xy=Num.copy()
+print(xy)
+
+Num.update([4,2])
+print(Num)
+Num.discard(7)
+print(Num)
+Num.clear()
+print(Num)
+
+a = {1, 2, 3, 4}
+b = {3, 4, 5, 6}
+print(a.union(b))   # {1, 2, 3, 4, 5, 6}
+print(a | b)        # same result
+
+print(a.intersection(b))  # {3, 4}
+print(a & b)              # same result
+
+print(a.difference(b))  # {1, 2}
+print(a - b)
+
+a = {1, 2}
+b = {1, 2, 3, 4}
+
+print(a.issubset(b))  # ✅ True: all items in `a` are in `b`
+print(b.issubset(a))  # ❌ False: `b` has more stuff
+
+a = {1, 2, 3, 4}
+b = {2, 3}
+
+print(a.issuperset(b))  # ✅ True: `a` has all items in `b`
+print(b.issuperset(a))  # ❌ False
+
+x = {1, 2}
+y = {2, 3}
+
+print(x.isdisjoint(y))  # ❌ False: they both have 2
+
