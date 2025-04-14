@@ -31,3 +31,16 @@ Di={
 print(type(Di))
 print(Di)
 
+#Modify a List
+fruits=["Apple","Mango","Pineapple","Orange","Avocado"]
+print(fruits)
+fruits.append("Tomatoes")
+print(fruits)
+fruits.insert(3,"Banana")
+print(fruits)
+fruits.reverse()
+print(fruits)
+print(fruits.count("Banana"))
+fruits.sort()
+print(fruits)
+print(len(fruits))
